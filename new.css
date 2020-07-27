@@ -1,0 +1,236 @@
+body {
+  font-size: .875rem;
+}
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 48px 0 0;
+}
+@media (max-width:216px){
+	.image1{
+		font-size:0.75rem;
+	}
+}
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: black;
+
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: black;
+}
+
+.sidebar .nav-link.active {
+  color: #007bff;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1.3rem;
+  background-color: grey;
+  color:black;
+}
+
+.navbar .navbar-toggler {
+  top: .25rem;
+  right: 1rem;
+}
+
+.hel{
+  transition:transform 0.5s;
+
+}
+.hel:hover{
+  background-color:#343a40;
+  color:white;
+  transform:scale(1.1);
+}
+
+.sign{
+    background-color:grey;
+	color:black;
+    border:1rem;
+    padding:0.65rem;
+	width:7rem;
+	border-radius:20%;
+}
+
+
+.part1{
+  background-color:lightgrey;
+}
+.space{
+    border:1.75rem;
+    padding:0.45rem;
+}
+.space1{
+	border:1.75rem;
+	padding:0.5rem;
+}
+
+.space2{
+	border:1.75rem;
+	padding:1.2rem;
+}
+.recent{
+	border-bottom:0.05rem solid;
+	border-color:lightgrey;
+}
+
+.container{
+  position: relative;
+  width: 100%;
+}
+.inner{
+	margin:10% 10% 20% 10%;
+}
+.inner1{
+	margin-left:2%;
+}
+/* Make the image to responsive */
+.image {
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: red;
+}
+
+/* When you mouse over the container, fade in the overlay icon*/
+.container:hover .overlay {
+  opacity: 1;
+}
+
+/* The icon inside the overlay is positioned in the middle vertically and horizontally */
+.icon {
+  color: white;
+  font-size: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* When you move the mouse over the icon, change color */
+.fa-user:hover {
+  color: #eee;
+}
+.me{
+	font-size:1.2rem;
+}
+@media (max-width: 750px) {
+  .sidebar {
+    top: 5rem;
+  }
+  .icon{
+	  font-size:4rem;
+  }
+  .container .inner{
+		width:100%;
+	}
+	.inner{
+		margin:0 2% 0 0;
+	}
+	.card-body{
+		padding:1rem 0.5rem 0 2rem;
+	}
+	
+	.container{
+		padding:0.7rem 0.8rem 0.7rem 0;
+	}
+	.inner{
+		width:100%;
+		height:auto;
+		padding:0.2rem 0.5rem 0 0 ;
+	}
+	.image{
+		padding:0 0 0 0;
+	}
+}
+
+@media (max-width: 620px){
+	
+	.container .inner{
+		width:100%;
+	}
+	.inner{
+		margin:0 2% 0 0;
+	}
+	.me{
+		font-size:0.9rem;
+	}
+	.card-body{
+		padding:1rem 0 0 2rem;
+	}
+	
+	.container{
+		padding:0 0.8rem 0 0;
+	}
+	.inner{
+		width:100%;
+		height:auto;
+		padding:0 0.5rem 0 0 ;
+	}
+	.image{
+		padding:0 0 0 0;
+	}
+	.icon{
+		font-size:3rem;
+	}
+	
+}
+@media (max-width: 245px){
+	.image1{
+		font-size:0.9rem;
+	}
+	.icon{
+		font-size:2rem;
+	}
+}
