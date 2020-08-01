@@ -155,13 +155,10 @@ body {
 .card-body{
 	background-color:lightgrey;
 }
-.text{
-	width:500px;
+.border-bottom{
+	width:65%;
 }
-.body{
-	width:500px;
-	height:130px;
-}
+
 .subhead{
 	font-size:1.4rem;
 }
@@ -171,22 +168,68 @@ body {
 .form-check-label{
 	font-size:0.9rem;
 }
+@media (min-width:1300px){
+	.card{
+	width:65%;
+}
+.text{
+	width:500px;
+}
+.body{
+	width:500px;
+	height:130px;
+}
+}
+@media (max-width: 1300px)
+{
+		.card{
+	width:65%;
+	}
+	.text{
+	width:450px;
+	}
+	.body{
+		width:450px;
+		height:130px;
+}
+}
+@media (max-width: 1000px)
+{
+		.card{
+	width:90%;
+	}
+	.border-bottom{
+	width:90%;
+	}
+	.text{
+	width:450px;
+	}
+	.body{
+		width:450px;
+		height:130px;
+}
+}
 @media (max-width: 800px){
+		.card{
+	width:95%;
+	}
+	.border-bottom{
+	width:95%;
+	}
 	.text{
 		width:350px;
 	}
 	.body{
 		width:350px;
-		height:100px;
+		height:80px;
 	}
+	
 }
 @media (max-width: 750px) {
   .sidebar {
     top: 5rem;
   }
-	.container{
-		padding:0.7rem 0.8rem 0.7rem 0;
-	}
+  
 }
 
 @media (max-width: 620px){
@@ -199,6 +242,12 @@ body {
 	
 }
 @media (max-width:450px){
+		.card{
+	width:100%;
+	}
+	.border-bottom{
+	width:100%;
+	}
 	.text{
 		width:280px;
 	}
